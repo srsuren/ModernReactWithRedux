@@ -14,4 +14,5 @@ If it was installed correctly you should be able to run the following two comman
 Module can be used to create boilerplate app with most used componenets so that you don't have to install and configure them. <br>
 `sudo npm install -g create-react-app`
 
-## First React App
+## Creating and Initialising your first App
+Use the module installed above to create and intialise your first all `create-react-app jsx`
