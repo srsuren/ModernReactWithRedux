@@ -10,4 +10,6 @@ If it was installed correctly you should be able to run the following two comman
 * `node -v`
 * `npm -v`
 
-## Install
+## Install Create React App module
+Module can be used to create boilerplate app with most used componenets so that you don't have to install and configure them. <br>
+`sudo npm install -g create-reac-app`
