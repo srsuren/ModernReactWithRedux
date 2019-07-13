@@ -9,3 +9,5 @@ Then install nodejs using the command below
 If it was installed correctly you should be able to run the following two commands
 * `node -v`
 * `npm -v`
+
+## Install
