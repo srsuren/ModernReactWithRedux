@@ -16,3 +16,6 @@ Module can be used to create boilerplate app with most used componenets so that 
 
 ## Creating and Initialising your first App
 Use the module installed above to create and intialise your first all `create-react-app jsx`
+
+### Useful Tools
+Faker JS - npm install --save faker
