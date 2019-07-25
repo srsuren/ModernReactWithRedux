@@ -1,46 +1,39 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import faker from 'faker';
+import CommentDetail from './components/CommentDetail';
+import ApprovalCard from './components/ApprovalCard';
 
 const App = () => {
-    return (
+    return (  
         <div className="ui container comments">
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">Sam</a>
-                    <div className="metadata">
-                        <span className="date">Today 6PM</span>
-                    </div>
-                    <div className="text">Nice blog post!</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">Sam1</a>
-                    <div className="metadata">
-                        <span className="date">Today 6PM</span>
-                    </div>
-                    <div className="text">Nice blog post2!</div>
-                </div>
-            </div>
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.avatar()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">Sam2</a>
-                    <div className="metadata">
-                        <span className="date">Today 6PM</span>
-                    </div>
-                    <div className="text">Nice blog post2!</div>
-                </div>
-            </div>
+            <ApprovalCard>
+                <CommentDetail 
+                    author="Sam" 
+                    timeAgo="Today at 4pm"
+                    comment="Nice Text" 
+                    avatar={faker.image.avatar()}
+                />
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <CommentDetail 
+                    author="Jane" 
+                    timeAgo="Today at 5pm"
+                    comment="Briliant"
+                    avatar={faker.image.avatar()}
+                />
+             </ApprovalCard>
+
+            <ApprovalCard>
+                <CommentDetail 
+                    author="Alex" 
+                    timeAgo="Yesterday at 1pm"
+                    comment="this is ok"
+                    avatar={faker.image.avatar()}
+                />
+            </ApprovalCard>
+            
         </div>
     );
 }
